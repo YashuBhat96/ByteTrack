@@ -1,0 +1,12 @@
+# Path settings
+train: "C:\\Users\\ybr5070\\Desktop\\yolo_merged\\images\\train"  # Path to training images
+val: "C:\\Users\\ybr5070\\Desktop\\yolo_merged\\images\\val"      # Path to validation images (assuming you meant test for validation)
+
+# Number of classes
+nc: 1  # Number of object classes
+
+# Class names
+names:
+  0: child_face
+
+

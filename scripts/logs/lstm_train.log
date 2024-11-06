@@ -1,0 +1,37 @@
+2024-10-15 11:08:34 - INFO - Loading data from /storage/group/klk37/default/homebytes/video/fbs/train_new/consolidated_sequences.pt
+2024-10-15 11:08:40 - INFO - Reshaping data tensors to sequence length 50
+2024-10-15 11:08:40 - INFO - Loading data from /storage/group/klk37/default/homebytes/video/fbs/val_new/consolidated_sequences.pt
+2024-10-15 11:08:41 - INFO - Reshaping data tensors to sequence length 50
+2024-10-15 11:08:41 - INFO - Original Minority class size (bites): 13527, Majority class size (non-bites): 77653
+2024-10-15 11:08:44 - INFO - After undersampling, dataset size: 54108
+2024-10-15 11:08:49 - INFO - Final dataset size after random oversampling and undersampling: 81162
+2024-10-15 11:08:49 - INFO - Testing configuration: {'alpha': 0.3, 'batch_size': 128, 'dropout': 0.4, 'epochs': 40, 'gamma': 0.3, 'learning_rate': 5e-05, 'patience': 7, 'temporal_weight': 0.8, 'undersample_ratio': 3.0, 'weight_decay': 0.0001}
+2024-10-15 11:08:49 - INFO - Original Minority class size (bites): 13527, Majority class size (non-bites): 77653
+2024-10-15 11:08:52 - INFO - After undersampling, dataset size: 54108
+2024-10-15 11:08:57 - INFO - Final dataset size after random oversampling and undersampling: 81162
+2024-10-15 11:08:57 - INFO - Setting up optimizer with lr=5e-05, weight_decay=0.0001.
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:28: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn("The verbose parameter is deprecated. Please use get_last_lr() "
+2024-10-15 11:19:05 - INFO - Best threshold found: 0.60, Best F1 score: 0.5991
+2024-10-15 11:19:05 - INFO - Epoch 1/40: Train Loss: 0.2583, Train F1: 0.7927, Val Loss: 0.2161, Val F1: 0.7478, Val Precision: 0.8074, Val Recall: 0.6964, Val AUC-ROC: 0.8688, Val AUC-PR: 0.6330
+2024-10-15 11:19:05 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_1.pth
+2024-10-15 11:27:42 - INFO - Best threshold found: 0.55, Best F1 score: 0.6353
+2024-10-15 11:27:42 - INFO - Epoch 2/40: Train Loss: 0.1641, Train F1: 0.8766, Val Loss: 0.1921, Val F1: 0.7799, Val Precision: 0.8823, Val Recall: 0.6988, Val AUC-ROC: 0.8861, Val AUC-PR: 0.6936
+2024-10-15 11:27:42 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_2.pth
+2024-10-15 11:37:53 - INFO - Best threshold found: 0.50, Best F1 score: 0.6219
+2024-10-15 11:37:53 - INFO - Epoch 3/40: Train Loss: 0.1239, Train F1: 0.9058, Val Loss: 0.1779, Val F1: 0.7344, Val Precision: 0.9214, Val Recall: 0.6105, Val AUC-ROC: 0.8854, Val AUC-PR: 0.6863
+2024-10-15 11:47:56 - INFO - Best threshold found: 0.65, Best F1 score: 0.6477
+2024-10-15 11:47:56 - INFO - Epoch 4/40: Train Loss: 0.0981, Train F1: 0.9269, Val Loss: 0.2223, Val F1: 0.7907, Val Precision: 0.8964, Val Recall: 0.7073, Val AUC-ROC: 0.8914, Val AUC-PR: 0.7081
+2024-10-15 11:47:56 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_4.pth
+2024-10-15 11:59:14 - INFO - Best threshold found: 0.65, Best F1 score: 0.6549
+2024-10-15 11:59:14 - INFO - Epoch 5/40: Train Loss: 0.0787, Train F1: 0.9419, Val Loss: 0.2205, Val F1: 0.8242, Val Precision: 0.9452, Val Recall: 0.7306, Val AUC-ROC: 0.9000, Val AUC-PR: 0.7183
+2024-10-15 11:59:15 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_5.pth
+2024-10-15 12:11:34 - INFO - Best threshold found: 0.65, Best F1 score: 0.6424
+2024-10-15 12:11:34 - INFO - Epoch 6/40: Train Loss: 0.0635, Train F1: 0.9530, Val Loss: 0.2750, Val F1: 0.8274, Val Precision: 0.9024, Val Recall: 0.7639, Val AUC-ROC: 0.8927, Val AUC-PR: 0.7098
+2024-10-15 12:11:34 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_6.pth
+2024-10-15 12:23:03 - INFO - Best threshold found: 0.50, Best F1 score: 0.6495
+2024-10-15 12:23:03 - INFO - Epoch 7/40: Train Loss: 0.0376, Train F1: 0.9724, Val Loss: 0.2698, Val F1: 0.8151, Val Precision: 0.9326, Val Recall: 0.7240, Val AUC-ROC: 0.8874, Val AUC-PR: 0.7080
+2024-10-15 12:40:09 - INFO - Best threshold found: 0.55, Best F1 score: 0.6452
+2024-10-15 12:40:09 - INFO - Epoch 8/40: Train Loss: 0.0319, Train F1: 0.9765, Val Loss: 0.2808, Val F1: 0.7981, Val Precision: 0.9296, Val Recall: 0.6992, Val AUC-ROC: 0.8827, Val AUC-PR: 0.7011
+2024-10-15 12:51:36 - INFO - Best threshold found: 0.65, Best F1 score: 0.6452
+2024-10-15 12:51:37 - INFO - Epoch 9/40: Train Loss: 0.0289, Train F1: 0.9788, Val Loss: 0.2961, Val F1: 0.7968, Val Precision: 0.9459, Val Recall: 0.6883, Val AUC-ROC: 0.8820, Val AUC-PR: 0.6986

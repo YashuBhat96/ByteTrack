@@ -1,0 +1,283 @@
+2024-11-04 13:02:37 - INFO - Loading data from /storage/group/klk37/default/homebytes/video/fbs/tensors/consolidated_sequences_train.pt
+2024-11-04 13:02:43 - INFO - Reshaping data tensors to sequence length 50
+2024-11-04 13:02:43 - INFO - Loading data from /storage/group/klk37/default/homebytes/video/fbs/tensors/consolidated_sequences_val.pt
+2024-11-04 13:02:45 - INFO - Reshaping data tensors to sequence length 50
+2024-11-04 13:02:45 - INFO - Original Minority class size (bites): 13527, Majority class size (non-bites): 77653
+2024-11-04 13:02:48 - INFO - After undersampling, dataset size: 54108
+2024-11-04 13:02:52 - INFO - Final dataset size after random oversampling and undersampling: 81162
+2024-11-04 13:02:53 - INFO - Testing configuration: {'alpha': 0.3, 'batch_size': 128, 'dropout': 0.4, 'epochs': 40, 'gamma': 0.3, 'learning_rate': 5e-05, 'patience': 3, 'temporal_weight': 0.8, 'undersample_ratio': 3.0, 'weight_decay': 0.0001}
+2024-11-04 13:02:53 - INFO - Original Minority class size (bites): 13527, Majority class size (non-bites): 77653
+2024-11-04 13:02:55 - INFO - After undersampling, dataset size: 54108
+2024-11-04 13:03:00 - INFO - Final dataset size after random oversampling and undersampling: 81162
+2024-11-04 13:17:55 - INFO - Best threshold found: 0.30, Best F1 score: 0.2818
+2024-11-04 13:17:55 - INFO - Epoch 1/40: Train Loss: 0.3909, Train F1: 0.6667, Val Loss: 0.4204, Val F1: 0.2818, Val Precision: 0.1640, Val Recall: 1.0000, Val AUC-ROC: 0.5002, Val AUC-PR: 0.1613
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 13:17:56 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_1.pth
+2024-11-04 13:31:19 - INFO - Best threshold found: 0.55, Best F1 score: 0.4904
+2024-11-04 13:31:20 - INFO - Epoch 2/40: Train Loss: 0.3459, Train F1: 0.7016, Val Loss: 0.2799, Val F1: 0.6105, Val Precision: 0.6045, Val Recall: 0.6167, Val AUC-ROC: 0.8047, Val AUC-PR: 0.4332
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 13:31:20 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_2.pth
+2024-11-04 13:46:09 - INFO - Best threshold found: 0.55, Best F1 score: 0.5220
+2024-11-04 13:46:09 - INFO - Epoch 3/40: Train Loss: 0.2678, Train F1: 0.7893, Val Loss: 0.2677, Val F1: 0.6589, Val Precision: 0.6457, Val Recall: 0.6725, Val AUC-ROC: 0.8233, Val AUC-PR: 0.5023
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 13:46:09 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_3.pth
+2024-11-04 13:58:25 - INFO - Best threshold found: 0.60, Best F1 score: 0.5447
+2024-11-04 13:58:26 - INFO - Epoch 4/40: Train Loss: 0.2432, Train F1: 0.8126, Val Loss: 0.2452, Val F1: 0.6564, Val Precision: 0.7281, Val Recall: 0.5975, Val AUC-ROC: 0.8377, Val AUC-PR: 0.5470
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 14:10:58 - INFO - Best threshold found: 0.65, Best F1 score: 0.5587
+2024-11-04 14:10:58 - INFO - Epoch 5/40: Train Loss: 0.2276, Train F1: 0.8264, Val Loss: 0.2523, Val F1: 0.6743, Val Precision: 0.7442, Val Recall: 0.6164, Val AUC-ROC: 0.8500, Val AUC-PR: 0.5777
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 14:10:58 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_5.pth
+2024-11-04 14:24:11 - INFO - Best threshold found: 0.65, Best F1 score: 0.5736
+2024-11-04 14:24:11 - INFO - Epoch 6/40: Train Loss: 0.2146, Train F1: 0.8371, Val Loss: 0.2523, Val F1: 0.7071, Val Precision: 0.7545, Val Recall: 0.6653, Val AUC-ROC: 0.8618, Val AUC-PR: 0.6096
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 14:24:11 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_6.pth
+2024-11-04 14:36:21 - INFO - Best threshold found: 0.65, Best F1 score: 0.5923
+2024-11-04 14:36:21 - INFO - Epoch 7/40: Train Loss: 0.2030, Train F1: 0.8463, Val Loss: 0.2179, Val F1: 0.7101, Val Precision: 0.8536, Val Recall: 0.6079, Val AUC-ROC: 0.8723, Val AUC-PR: 0.6385
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 14:36:21 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_7.pth
+2024-11-04 14:48:22 - INFO - Best threshold found: 0.65, Best F1 score: 0.6001
+2024-11-04 14:48:22 - INFO - Epoch 8/40: Train Loss: 0.1929, Train F1: 0.8537, Val Loss: 0.2280, Val F1: 0.7446, Val Precision: 0.8421, Val Recall: 0.6674, Val AUC-ROC: 0.8775, Val AUC-PR: 0.6528
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 14:48:22 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_8.pth
+2024-11-04 15:01:42 - INFO - Best threshold found: 0.65, Best F1 score: 0.5955
+2024-11-04 15:01:42 - INFO - Epoch 9/40: Train Loss: 0.1849, Train F1: 0.8600, Val Loss: 0.2515, Val F1: 0.7670, Val Precision: 0.7944, Val Recall: 0.7414, Val AUC-ROC: 0.8836, Val AUC-PR: 0.6645
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 15:01:43 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_9.pth
+2024-11-04 15:15:09 - INFO - Best threshold found: 0.65, Best F1 score: 0.6072
+2024-11-04 15:15:09 - INFO - Epoch 10/40: Train Loss: 0.1779, Train F1: 0.8650, Val Loss: 0.2367, Val F1: 0.7771, Val Precision: 0.8309, Val Recall: 0.7297, Val AUC-ROC: 0.8870, Val AUC-PR: 0.6730
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 15:15:09 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_10.pth
+2024-11-04 15:26:48 - INFO - Best threshold found: 0.65, Best F1 score: 0.6102
+2024-11-04 15:26:48 - INFO - Epoch 11/40: Train Loss: 0.1711, Train F1: 0.8701, Val Loss: 0.2412, Val F1: 0.7835, Val Precision: 0.8231, Val Recall: 0.7476, Val AUC-ROC: 0.8903, Val AUC-PR: 0.6795
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 15:26:48 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_11.pth
+2024-11-04 15:40:40 - INFO - Best threshold found: 0.65, Best F1 score: 0.6128
+2024-11-04 15:40:40 - INFO - Epoch 12/40: Train Loss: 0.1655, Train F1: 0.8754, Val Loss: 0.2390, Val F1: 0.7911, Val Precision: 0.8378, Val Recall: 0.7494, Val AUC-ROC: 0.8924, Val AUC-PR: 0.6855
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 15:40:40 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_12.pth
+2024-11-04 15:52:27 - INFO - Best threshold found: 0.65, Best F1 score: 0.6223
+2024-11-04 15:52:27 - INFO - Epoch 13/40: Train Loss: 0.1598, Train F1: 0.8792, Val Loss: 0.2220, Val F1: 0.7891, Val Precision: 0.8740, Val Recall: 0.7193, Val AUC-ROC: 0.8934, Val AUC-PR: 0.6896
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 16:06:02 - INFO - Best threshold found: 0.65, Best F1 score: 0.6226
+2024-11-04 16:06:02 - INFO - Epoch 14/40: Train Loss: 0.1561, Train F1: 0.8822, Val Loss: 0.2249, Val F1: 0.7929, Val Precision: 0.8693, Val Recall: 0.7288, Val AUC-ROC: 0.8936, Val AUC-PR: 0.6901
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 16:06:02 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_14.pth
+2024-11-04 16:19:18 - INFO - Best threshold found: 0.65, Best F1 score: 0.6226
+2024-11-04 16:19:18 - INFO - Epoch 15/40: Train Loss: 0.1516, Train F1: 0.8858, Val Loss: 0.2311, Val F1: 0.8000, Val Precision: 0.8586, Val Recall: 0.7489, Val AUC-ROC: 0.8950, Val AUC-PR: 0.6927
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 16:19:18 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_15.pth
+2024-11-04 16:32:17 - INFO - Best threshold found: 0.65, Best F1 score: 0.6254
+2024-11-04 16:32:17 - INFO - Epoch 16/40: Train Loss: 0.1474, Train F1: 0.8884, Val Loss: 0.2336, Val F1: 0.8000, Val Precision: 0.8581, Val Recall: 0.7492, Val AUC-ROC: 0.8961, Val AUC-PR: 0.6939
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 16:46:03 - INFO - Best threshold found: 0.65, Best F1 score: 0.6229
+2024-11-04 16:46:03 - INFO - Epoch 17/40: Train Loss: 0.1428, Train F1: 0.8929, Val Loss: 0.2224, Val F1: 0.7935, Val Precision: 0.8952, Val Recall: 0.7125, Val AUC-ROC: 0.8941, Val AUC-PR: 0.6910
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 17:01:53 - INFO - Best threshold found: 0.60, Best F1 score: 0.6242
+2024-11-04 17:01:53 - INFO - Epoch 18/40: Train Loss: 0.1389, Train F1: 0.8957, Val Loss: 0.2284, Val F1: 0.8035, Val Precision: 0.8509, Val Recall: 0.7610, Val AUC-ROC: 0.8950, Val AUC-PR: 0.6940
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 17:01:54 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_18.pth
+2024-11-04 17:14:58 - INFO - Best threshold found: 0.65, Best F1 score: 0.6188
+2024-11-04 17:14:59 - INFO - Epoch 19/40: Train Loss: 0.1356, Train F1: 0.8989, Val Loss: 0.2479, Val F1: 0.8029, Val Precision: 0.8423, Val Recall: 0.7671, Val AUC-ROC: 0.8957, Val AUC-PR: 0.6937
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 17:28:37 - INFO - Best threshold found: 0.65, Best F1 score: 0.6281
+2024-11-04 17:28:37 - INFO - Epoch 20/40: Train Loss: 0.1323, Train F1: 0.9016, Val Loss: 0.2317, Val F1: 0.8017, Val Precision: 0.8724, Val Recall: 0.7417, Val AUC-ROC: 0.8950, Val AUC-PR: 0.6947
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 17:41:43 - INFO - Best threshold found: 0.60, Best F1 score: 0.6207
+2024-11-04 17:41:43 - INFO - Epoch 21/40: Train Loss: 0.1284, Train F1: 0.9049, Val Loss: 0.2311, Val F1: 0.8015, Val Precision: 0.8618, Val Recall: 0.7491, Val AUC-ROC: 0.8926, Val AUC-PR: 0.6892
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 17:41:43 - INFO - Early stopping triggered.
+2024-11-04 17:41:43 - INFO - Best configuration: {'alpha': 0.3, 'batch_size': 128, 'dropout': 0.4, 'epochs': 40, 'gamma': 0.3, 'learning_rate': 5e-05, 'patience': 3, 'temporal_weight': 0.8, 'undersample_ratio': 3.0, 'weight_decay': 0.0001}, Best F1 score: 0.8035
+2024-11-04 17:41:44 - INFO - Saved the best overall model to /storage/group/klk37/default/homebytes/code/best_overall_model.pth
+2024-11-04 17:41:44 - INFO - Best configuration: {'alpha': 0.3, 'batch_size': 128, 'dropout': 0.4, 'epochs': 40, 'gamma': 0.3, 'learning_rate': 5e-05, 'patience': 3, 'temporal_weight': 0.8, 'undersample_ratio': 3.0, 'weight_decay': 0.0001}, Best F1: 0.8034829845023167
+  File "/storage/home/ybr5070/group/homebytes/code/scripts/06_LSTM_train/val_tune.py", line 267
+    grid = ParameterGrid(param_grid)
+IndentationError: unexpected indent
+2024-11-04 21:51:17 - INFO - Loading data from /storage/group/klk37/default/homebytes/video/fbs/tensors/consolidated_sequences_train.pt
+2024-11-04 21:51:47 - INFO - Reshaping data tensors to sequence length 50
+2024-11-04 21:51:47 - INFO - Loading data from /storage/group/klk37/default/homebytes/video/fbs/tensors/consolidated_sequences_val.pt
+2024-11-04 21:52:00 - INFO - Reshaping data tensors to sequence length 50
+2024-11-04 21:52:00 - INFO - Original Minority class size (bites): 13527, Majority class size (non-bites): 77653
+2024-11-04 21:52:06 - INFO - After undersampling, dataset size: 54108
+2024-11-04 21:52:14 - INFO - Final dataset size after random oversampling and undersampling: 81162
+2024-11-04 21:52:15 - INFO - Testing configuration: {'alpha': 0.25, 'batch_size': 128, 'dropout': 0.4, 'epochs': 40, 'gamma': 2.0, 'learning_rate': 5e-05, 'patience': 5, 'temporal_weight': 0.8, 'undersample_ratio': 2.0, 'weight_decay': 0.0001}
+2024-11-04 21:52:15 - INFO - Original Minority class size (bites): 13527, Majority class size (non-bites): 77653
+2024-11-04 21:52:19 - INFO - After undersampling, dataset size: 40581
+2024-11-04 21:52:25 - INFO - Final dataset size after random oversampling and undersampling: 54108
+2024-11-04 22:34:56 - INFO - Best threshold found: 0.30, Best F1 score: 0.2818
+2024-11-04 22:34:56 - INFO - Epoch 1/40: Train Loss: 0.3331, Train F1: 0.6667, Val Loss: 0.3524, Val F1: 0.2818, Val Precision: 0.1640, Val Recall: 1.0000, Val AUC-ROC: 0.4990, Val AUC-PR: 0.1593
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 22:34:56 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_1.pth
+2024-11-04 23:11:11 - INFO - Best threshold found: 0.50, Best F1 score: 0.4633
+2024-11-04 23:11:11 - INFO - Epoch 2/40: Train Loss: 0.3048, Train F1: 0.6890, Val Loss: 0.2463, Val F1: 0.5472, Val Precision: 0.5246, Val Recall: 0.5717, Val AUC-ROC: 0.7830, Val AUC-PR: 0.4002
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 23:11:11 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_2.pth
+2024-11-04 23:57:09 - INFO - Best threshold found: 0.50, Best F1 score: 0.4951
+2024-11-04 23:57:09 - INFO - Epoch 3/40: Train Loss: 0.2468, Train F1: 0.7732, Val Loss: 0.2368, Val F1: 0.6075, Val Precision: 0.5648, Val Recall: 0.6572, Val AUC-ROC: 0.8067, Val AUC-PR: 0.4609
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-04 23:57:09 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_3.pth
+2024-11-05 00:38:29 - INFO - Best threshold found: 0.50, Best F1 score: 0.5157
+2024-11-05 00:38:30 - INFO - Epoch 4/40: Train Loss: 0.2251, Train F1: 0.7980, Val Loss: 0.2176, Val F1: 0.6351, Val Precision: 0.6371, Val Recall: 0.6332, Val AUC-ROC: 0.8195, Val AUC-PR: 0.5077
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 00:38:30 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_4.pth
+2024-11-05 01:14:26 - INFO - Best threshold found: 0.55, Best F1 score: 0.5335
+2024-11-05 01:14:26 - INFO - Epoch 5/40: Train Loss: 0.2109, Train F1: 0.8145, Val Loss: 0.2081, Val F1: 0.6254, Val Precision: 0.6933, Val Recall: 0.5696, Val AUC-ROC: 0.8287, Val AUC-PR: 0.5360
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 01:52:15 - INFO - Best threshold found: 0.65, Best F1 score: 0.5433
+2024-11-05 01:52:15 - INFO - Epoch 6/40: Train Loss: 0.2004, Train F1: 0.8259, Val Loss: 0.2228, Val F1: 0.6256, Val Precision: 0.7233, Val Recall: 0.5512, Val AUC-ROC: 0.8361, Val AUC-PR: 0.5549
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 02:30:41 - INFO - Best threshold found: 0.65, Best F1 score: 0.5573
+2024-11-05 02:30:41 - INFO - Epoch 7/40: Train Loss: 0.1911, Train F1: 0.8355, Val Loss: 0.2199, Val F1: 0.6540, Val Precision: 0.7461, Val Recall: 0.5822, Val AUC-ROC: 0.8466, Val AUC-PR: 0.5784
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 02:30:41 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_7.pth
+2024-11-05 03:08:18 - INFO - Best threshold found: 0.60, Best F1 score: 0.5705
+2024-11-05 03:08:18 - INFO - Epoch 8/40: Train Loss: 0.1829, Train F1: 0.8433, Val Loss: 0.2080, Val F1: 0.7008, Val Precision: 0.7665, Val Recall: 0.6454, Val AUC-ROC: 0.8532, Val AUC-PR: 0.5975
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 03:08:18 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_8.pth
+2024-11-05 03:55:53 - INFO - Best threshold found: 0.65, Best F1 score: 0.5777
+2024-11-05 03:55:54 - INFO - Epoch 9/40: Train Loss: 0.1752, Train F1: 0.8500, Val Loss: 0.2127, Val F1: 0.7095, Val Precision: 0.8003, Val Recall: 0.6373, Val AUC-ROC: 0.8571, Val AUC-PR: 0.6107
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 03:55:54 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_9.pth
+2024-11-05 04:30:31 - INFO - Best threshold found: 0.65, Best F1 score: 0.5848
+2024-11-05 04:30:31 - INFO - Epoch 10/40: Train Loss: 0.1691, Train F1: 0.8558, Val Loss: 0.2135, Val F1: 0.7323, Val Precision: 0.8236, Val Recall: 0.6592, Val AUC-ROC: 0.8627, Val AUC-PR: 0.6251
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 04:30:31 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_10.pth
+2024-11-05 05:11:58 - INFO - Best threshold found: 0.65, Best F1 score: 0.5925
+2024-11-05 05:11:58 - INFO - Epoch 11/40: Train Loss: 0.1627, Train F1: 0.8618, Val Loss: 0.2025, Val F1: 0.7317, Val Precision: 0.8586, Val Recall: 0.6376, Val AUC-ROC: 0.8663, Val AUC-PR: 0.6370
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 05:56:24 - INFO - Best threshold found: 0.65, Best F1 score: 0.5976
+2024-11-05 05:56:24 - INFO - Epoch 12/40: Train Loss: 0.1575, Train F1: 0.8650, Val Loss: 0.2087, Val F1: 0.7486, Val Precision: 0.8544, Val Recall: 0.6662, Val AUC-ROC: 0.8679, Val AUC-PR: 0.6426
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 05:56:24 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_12.pth
+2024-11-05 06:44:48 - INFO - Best threshold found: 0.65, Best F1 score: 0.5933
+2024-11-05 06:44:49 - INFO - Epoch 13/40: Train Loss: 0.1533, Train F1: 0.8696, Val Loss: 0.2260, Val F1: 0.7705, Val Precision: 0.8317, Val Recall: 0.7178, Val AUC-ROC: 0.8707, Val AUC-PR: 0.6482
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 06:44:49 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_13.pth
+2024-11-05 07:21:54 - INFO - Best threshold found: 0.65, Best F1 score: 0.6060
+2024-11-05 07:21:54 - INFO - Epoch 14/40: Train Loss: 0.1475, Train F1: 0.8747, Val Loss: 0.2042, Val F1: 0.7618, Val Precision: 0.8742, Val Recall: 0.6751, Val AUC-ROC: 0.8738, Val AUC-PR: 0.6566
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 08:05:09 - INFO - Best threshold found: 0.65, Best F1 score: 0.6109
+2024-11-05 08:05:09 - INFO - Epoch 15/40: Train Loss: 0.1440, Train F1: 0.8777, Val Loss: 0.1948, Val F1: 0.7480, Val Precision: 0.8957, Val Recall: 0.6421, Val AUC-ROC: 0.8729, Val AUC-PR: 0.6600
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 08:46:53 - INFO - Best threshold found: 0.65, Best F1 score: 0.6040
+2024-11-05 08:46:53 - INFO - Epoch 16/40: Train Loss: 0.1405, Train F1: 0.8812, Val Loss: 0.2149, Val F1: 0.7723, Val Precision: 0.8606, Val Recall: 0.7005, Val AUC-ROC: 0.8739, Val AUC-PR: 0.6595
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 08:46:53 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_16.pth
+2024-11-05 09:30:18 - INFO - Best threshold found: 0.65, Best F1 score: 0.6100
+2024-11-05 09:30:19 - INFO - Epoch 17/40: Train Loss: 0.1367, Train F1: 0.8851, Val Loss: 0.2078, Val F1: 0.7720, Val Precision: 0.8828, Val Recall: 0.6860, Val AUC-ROC: 0.8741, Val AUC-PR: 0.6624
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 10:06:23 - INFO - Best threshold found: 0.65, Best F1 score: 0.6114
+2024-11-05 10:06:23 - INFO - Epoch 18/40: Train Loss: 0.1332, Train F1: 0.8870, Val Loss: 0.2119, Val F1: 0.7782, Val Precision: 0.8749, Val Recall: 0.7007, Val AUC-ROC: 0.8746, Val AUC-PR: 0.6643
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 10:06:23 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_18.pth
+2024-11-05 10:42:37 - INFO - Best threshold found: 0.65, Best F1 score: 0.6112
+2024-11-05 10:42:37 - INFO - Epoch 19/40: Train Loss: 0.1302, Train F1: 0.8899, Val Loss: 0.2163, Val F1: 0.7840, Val Precision: 0.8635, Val Recall: 0.7179, Val AUC-ROC: 0.8775, Val AUC-PR: 0.6679
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 10:42:37 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_19.pth
+2024-11-05 11:25:59 - INFO - Best threshold found: 0.65, Best F1 score: 0.6192
+2024-11-05 11:25:59 - INFO - Epoch 20/40: Train Loss: 0.1272, Train F1: 0.8926, Val Loss: 0.2033, Val F1: 0.7755, Val Precision: 0.8942, Val Recall: 0.6846, Val AUC-ROC: 0.8778, Val AUC-PR: 0.6734
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 12:09:21 - INFO - Best threshold found: 0.65, Best F1 score: 0.6133
+2024-11-05 12:09:21 - INFO - Epoch 21/40: Train Loss: 0.1242, Train F1: 0.8957, Val Loss: 0.2201, Val F1: 0.7927, Val Precision: 0.8658, Val Recall: 0.7311, Val AUC-ROC: 0.8774, Val AUC-PR: 0.6704
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 12:09:21 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_21.pth
+2024-11-05 12:50:50 - INFO - Best threshold found: 0.65, Best F1 score: 0.6186
+2024-11-05 12:50:50 - INFO - Epoch 22/40: Train Loss: 0.1213, Train F1: 0.8982, Val Loss: 0.2011, Val F1: 0.7734, Val Precision: 0.9120, Val Recall: 0.6713, Val AUC-ROC: 0.8776, Val AUC-PR: 0.6733
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 13:31:02 - INFO - Best threshold found: 0.65, Best F1 score: 0.6181
+2024-11-05 13:31:02 - INFO - Epoch 23/40: Train Loss: 0.1182, Train F1: 0.9014, Val Loss: 0.2076, Val F1: 0.7798, Val Precision: 0.8992, Val Recall: 0.6884, Val AUC-ROC: 0.8753, Val AUC-PR: 0.6728
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 14:05:40 - INFO - Best threshold found: 0.65, Best F1 score: 0.6197
+2024-11-05 14:05:40 - INFO - Epoch 24/40: Train Loss: 0.1158, Train F1: 0.9033, Val Loss: 0.2031, Val F1: 0.7751, Val Precision: 0.9189, Val Recall: 0.6702, Val AUC-ROC: 0.8757, Val AUC-PR: 0.6734
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 14:43:23 - INFO - Best threshold found: 0.65, Best F1 score: 0.6161
+2024-11-05 14:43:23 - INFO - Epoch 25/40: Train Loss: 0.1133, Train F1: 0.9050, Val Loss: 0.2175, Val F1: 0.7845, Val Precision: 0.8856, Val Recall: 0.7041, Val AUC-ROC: 0.8768, Val AUC-PR: 0.6735
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 15:22:21 - INFO - Best threshold found: 0.65, Best F1 score: 0.6218
+2024-11-05 15:22:21 - INFO - Epoch 26/40: Train Loss: 0.1109, Train F1: 0.9069, Val Loss: 0.2126, Val F1: 0.7881, Val Precision: 0.9095, Val Recall: 0.6952, Val AUC-ROC: 0.8767, Val AUC-PR: 0.6734
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 15:22:21 - INFO - Early stopping triggered.
+2024-11-05 15:22:21 - INFO - Testing configuration: {'alpha': 0.25, 'batch_size': 128, 'dropout': 0.4, 'epochs': 40, 'gamma': 2.0, 'learning_rate': 5e-05, 'patience': 5, 'temporal_weight': 0.8, 'undersample_ratio': 2.5, 'weight_decay': 0.0001}
+2024-11-05 15:22:21 - INFO - Original Minority class size (bites): 13527, Majority class size (non-bites): 77653
+2024-11-05 15:22:26 - INFO - After undersampling, dataset size: 47344
+2024-11-05 15:22:33 - INFO - Final dataset size after random oversampling and undersampling: 67634
+2024-11-05 15:58:35 - INFO - Best threshold found: 0.30, Best F1 score: 0.2818
+2024-11-05 15:58:35 - INFO - Epoch 1/40: Train Loss: 0.3333, Train F1: 0.6667, Val Loss: 0.3526, Val F1: 0.2818, Val Precision: 0.1640, Val Recall: 1.0000, Val AUC-ROC: 0.4527, Val AUC-PR: 0.1400
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 15:58:35 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_1.pth
+2024-11-05 16:41:28 - INFO - Best threshold found: 0.50, Best F1 score: 0.4635
+2024-11-05 16:41:28 - INFO - Epoch 2/40: Train Loss: 0.3081, Train F1: 0.6868, Val Loss: 0.2433, Val F1: 0.5488, Val Precision: 0.5304, Val Recall: 0.5686, Val AUC-ROC: 0.7847, Val AUC-PR: 0.4010
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 16:41:28 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_2.pth
+2024-11-05 17:25:25 - INFO - Best threshold found: 0.50, Best F1 score: 0.5049
+2024-11-05 17:25:25 - INFO - Epoch 3/40: Train Loss: 0.2524, Train F1: 0.7654, Val Loss: 0.2229, Val F1: 0.6167, Val Precision: 0.6275, Val Recall: 0.6064, Val AUC-ROC: 0.8130, Val AUC-PR: 0.4609
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 17:25:25 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_3.pth
+2024-11-05 18:07:38 - INFO - Best threshold found: 0.55, Best F1 score: 0.5251
+2024-11-05 18:07:38 - INFO - Epoch 4/40: Train Loss: 0.2308, Train F1: 0.7918, Val Loss: 0.2281, Val F1: 0.6465, Val Precision: 0.6332, Val Recall: 0.6604, Val AUC-ROC: 0.8276, Val AUC-PR: 0.4976
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 18:07:38 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_4.pth
+2024-11-05 18:47:31 - INFO - Best threshold found: 0.55, Best F1 score: 0.5411
+2024-11-05 18:47:32 - INFO - Epoch 5/40: Train Loss: 0.2166, Train F1: 0.8083, Val Loss: 0.2130, Val F1: 0.6419, Val Precision: 0.6641, Val Recall: 0.6211, Val AUC-ROC: 0.8369, Val AUC-PR: 0.5285
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 19:25:31 - INFO - Best threshold found: 0.60, Best F1 score: 0.5519
+2024-11-05 19:25:31 - INFO - Epoch 6/40: Train Loss: 0.2052, Train F1: 0.8215, Val Loss: 0.2198, Val F1: 0.6678, Val Precision: 0.6893, Val Recall: 0.6475, Val AUC-ROC: 0.8466, Val AUC-PR: 0.5518
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-11-05 19:25:31 - INFO - Saved the best model to /storage/group/klk37/default/homebytes/code/best_model_epoch_6.pth
+2024-11-05 20:07:40 - INFO - Best threshold found: 0.65, Best F1 score: 0.5625
+2024-11-05 20:07:40 - INFO - Epoch 7/40: Train Loss: 0.1959, Train F1: 0.8301, Val Loss: 0.2145, Val F1: 0.6594, Val Precision: 0.7419, Val Recall: 0.5934, Val AUC-ROC: 0.8548, Val AUC-PR: 0.5746
+/storage/home/ybr5070/.local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:156: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)

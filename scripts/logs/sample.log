@@ -1,0 +1,13 @@
+Subset created with 360 samples in /storage/group/klk37/default/homebytes/video/fbs/split_resized/train_sample
+Subset created with 80 samples in /storage/group/klk37/default/homebytes/video/fbs/split_resized/val_sample
+Subset created with subjects 7 in /storage/group/klk37/default/homebytes/video/fbs/split_resized/train_sample
+Subset created with subjects 7 in /storage/group/klk37/default/homebytes/video/fbs/split_resized/train_trans_sample
+Traceback (most recent call last):
+  File "/storage/group/klk37/default/homebytes/code/scripts/sample_hyp_tune.py", line 77, in <module>
+    create_subset(val_root_dir, val_subset_dir, sampled_subjects, num_workers=4)
+  File "/storage/group/klk37/default/homebytes/code/scripts/sample_hyp_tune.py", line 35, in create_subset
+    sampled_paths.extend(subject_paths[subject])
+KeyError: 'R01_009_V4_PS4_fixed'
+Subset created with subjects 7 in /storage/group/klk37/default/homebytes/video/fbs/split_resized/train_sample
+Subset created with subjects 7 in /storage/group/klk37/default/homebytes/video/fbs/split_resized/train_trans_sample
+Subset created with subjects 1 in /storage/group/klk37/default/homebytes/video/fbs/split_resized/val_sample

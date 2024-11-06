@@ -1,0 +1,10 @@
+# Path settings
+test: "C:\\Users\\ybr5070\\Desktop\\yolo_merged\\images\\test"
+val: "C:\\Users\\ybr5070\\Desktop\\yolo_merged\\images\\test"  # Add this line
+
+# Number of classes
+nc: 1  # Number of object classes
+
+# Class names
+names:
+  0: child_face
