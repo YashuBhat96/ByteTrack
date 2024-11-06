@@ -1,0 +1,9 @@
+torch==1.13.1+cu116
+torchvision==0.14.1+cu116
+opencv-python
+numpy
+Pillow
+scipy
+matplotlib
+tqdm
+PyYAML
