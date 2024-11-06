@@ -22,15 +22,6 @@
 
 
 
-storage.googleapis.com
-data/*
-data/images/*
-!data/hyps
-!data/images
-!data/images/zidane.jpg
-!data/images/bus.jpg
-!data/*.sh
-
 results*.csv
 
 # Datasets -------------------------------------------------------------------------------------------------------------
@@ -38,10 +29,6 @@ coco/
 coco128/
 VOC/
 
-coco2017labels-segments.zip
-test2017.zip
-train2017.zip
-val2017.zip
 
 # MATLAB GitIgnore -----------------------------------------------------------------------------------------------------
 *.m~
@@ -106,16 +93,6 @@ wheels/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
 
 # Translations
 *.mo
