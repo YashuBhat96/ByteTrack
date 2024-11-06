@@ -5,4 +5,6 @@ This is one of the first projects which does automatic bite detection in childen
 ### Status ![Proof of Concept](https://img.shields.io/badge/status-proof--of--concept-blue)
 
 ### License ![License: MIT](https://img.shields.io/badge/license-MIT-green)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
