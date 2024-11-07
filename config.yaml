@@ -1,8 +1,8 @@
 models:
   yolo_code_dir: "./yolov7_usage_ByteTrack" 
-  yolo_model_path: "./models/yolov7.pt"
-  faster_rcnn_model_path: "./models/frcnn_final.pth"
-  lstm_model_path: "./models/best_lstm.pth"
+  yolo_model_path: "./models_bytetrack/yolov7.pt"
+  faster_rcnn_model_path: "./models_bytetrack/frcnn_final.pth"
+  lstm_model_path: "./models_bytetrack/best_lstm.pth"
 
 paths:
   output_dir: "./PS_report"
