@@ -1,0 +1,3 @@
+[submodule "YOLOv7_custom"]
+	path = YOLOv7_custom
+	url = https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git

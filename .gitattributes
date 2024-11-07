@@ -4,3 +4,5 @@ yolov7_usage_ByteTrack/* filter=lfs diff=lfs merge=lfs -text
 C:/Users/ybr5070/Documents/ByteTrack/yolov7_usage_ByteTrack/runs/train/Bytetrack_exp_yolov7/yolov7.pt filter=lfs diff=lfs merge=lfs -text
 C:/Users/ybr5070/Documents/ByteTrack/models/yolov7.pt filter=lfs diff=lfs merge=lfs -text
 .pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
