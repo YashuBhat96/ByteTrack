@@ -42,7 +42,8 @@ The system uses a multi-stage deep learning architecture optimized for accurate 
 
 ## Dataset
 
-Our dataset consists of in-lab videos, where children were provided set meals with either a human reader(researcher) or audiobook. Camera angles are from the top corner providing comprehensive coverage of varying portion sizes and eating styles among children. Ground truths for the study are manually annotated timestamps from 2 researchers by visual observations. The annotated dataset supports model training and evaluation in children's eating behavior.
+Our dataset consists of in-lab videos, where children were provided set meals with either a human reader (researcher) or audiobook. Camera angles are from the top corner (see room orientation below) providing comprehensive coverage of varying portion sizes and eating styles among children. Ground truths for the study are manually annotated timestamps using [Noldus Observer XT](https://link.springer.com/article/10.3758/BF03203406) from 2 researchers by visual observations, using a set [protocol](https://pmc.ncbi.nlm.nih.gov/articles/PMC8671353/).
+
 <div style="display: flex; align-items: center;">
     <img src="assets/room_orient1.jpg" alt="room_orient1" width="500" style="margin-right: 30px;"/>
     <img src="assets/room_orient2.jpg" alt="room_orient2" width="500"/>
@@ -63,7 +64,8 @@ To get started with ByteTrack, follow these steps to set up your environment:
 ## 1. Clone the Repository
 
 First, clone the repository and navigate into the project directory:
-This pipeline uses YOLOv7 custom trained for our dataset (https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git) which should automatically get cloned with the ByteTrack repo
+This pipeline uses YOLOv7 ([original YOLOv7](https://github.com/WongKinYiu/yolov7)) custom trained for our dataset [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git) which should automatically get cloned with the ByteTrack repo.
+
 ```bash
 git clone https://github.com/YashuBhat96/ByteTrack.git
 cd ByteTrack
