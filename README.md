@@ -19,7 +19,7 @@
 - [Status](#status)
 - [License](#License)
 - [HomeBytes Study information](#HomeBytes-study)
-- [Contact information](#contact-info)
+- [Contact Information](#contact-info)
 - [Acknowledgments](#acknowledgments)
 
 ## Introduction
@@ -27,6 +27,7 @@
 This project presents one of the first automated systems for detecting eating bites in children during meal times. Our aim is to develop a robust, high-accuracy bite detection model for use in video-recorded meal settings. We collected and analyzed in-lab meal videos featuring children aged 7-9 (n=242 videos train set; n=94 children) across four portion sizes.
 
 The videos present unique challenges, as they capture natural, often noisy behavior in children, including frequent movement, occlusions, and varied eating styles. These factors introduce significant variability in the data, making automated bite detection particularly challenging. ByteTrack aims to overcome these complexities, enabling accurate bite detection even in noisy, real-world video settings.
+
 ## Approach
 
 The system uses a multi-stage deep learning architecture optimized for accurate detection and classification:
@@ -150,3 +151,36 @@ Comparing Manual vs. AI-Based Detection: We plan to assess ByteTracker's accurac
 Evaluating Lab vs. Home Conditions: We plan to explore the consistency of bite rate and intake patterns in controlled versus free-living environments, assessing ByteTracker's applicability beyond the lab.
 
 ByteTracker represents a step forward in leveraging AI to streamline eating behavioral analysis, aiming to enhance the scalability and practicality of dietary studies in real-world settings.
+
+## Contact Information
+
+Contributors
+This project is a collaborative effort by a team with expertise in computer vision, children's eating behavior analysis, food science, and nutrition at The Pennsylvania State University.
+
+**Yashaswini Rajendra Bhat**  
+Main Contributor/First Author, PhD Candidate, Department of Nutritional Sciences, Penn State  
+Email: [ybr5070@psu.edu]  
+LinkedIn: [Yashaswini Bhat](https://www.linkedin.com/in/yashubhat/)  
+X: [@YashuBhat](https://x.com/YashuBhat)  
+
+**Dr. Timothy R. Brick**  
+Main Technical Advisor, Co-Principal Investigator (Co-PI), Associate Professor, Department of Human Development and Family Studies, ICDS Faculty Co-Hire, Penn State  
+Email: [tbrick@psu.edu]  
+RealTime Science Lab: [https://sites.psu.edu/realtimescience]  
+
+**Dr. Kathleen L. Keller**  
+Co-Principal Investigator, Department of Nutritional Sciences and Department of Food Science, Penn State  
+Email: [klk37@psu.edu]  
+X: [@KatKellerLab](https://x.com/katkellerlab)  
+Children's Eating Behavior Lab: [https://hhd.psu.edu/nutrition/childrens-eating-lab/facility]  
+
+**Dr. Alaina L. Pearce**  
+Principal Investigator (PI), Department of Nutritional Sciences, Penn State  
+Email: [azp271@psu.edu]  
+X: [@AlainaPearce](https://x.com/AlainaLPearce)  
+Cogneato Lab: [https://sites.psu.edu/alainapearce]  
+
+Manual annotation contribution by Dr. Nicholas Neuwald, University at Buffalo.
+
+## Ackowledgments
+Initial funding from Institute of Computational and Data Sciences, Penn State
