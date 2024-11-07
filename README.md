@@ -2,7 +2,7 @@
 ### Automatic Bite Detection in Children as a part of HomeBytes project
 <div style="display: flex; align-items: center;">
     <img src="assets/ByteTrack%20logo.jpg" alt="ByteTrack Logo" width="300" style="margin-right: 30px;"/>
-    <img src="assets/HomeBytes%20logo.jpg" alt="HomeBytes Logo" width="300"/>
+    <img src="assets/HomeBytes_logo.jpg" alt="HomeBytes Logo" width="300"/>
 </div>
 
 
