@@ -1,0 +1,29 @@
+models:
+  yolo_code_dir: "./yolov7_usage_ByteTrack" 
+  yolo_model_path: "./YOLOv7_custom/runs\train\best_ByteTrack\weights\best.pt"
+  faster_rcnn_model_path: "./models_bytetrack/frcnn_final.pth"
+  lstm_model_path: "./models_bytetrack/best_lstm.pth"
+
+paths:
+  output_dir: "./PS_report"
+  video_dir: "./test"
+
+processing:
+  redetect_interval: 30
+  display_scale: 0.5
+  segment_length: 50
+  bite_threshold: 0.70
+  window_step: 40
+  min_frames_between_bites: 15
+  validation_duration: 2
+  motion_threshold: 0.02
+
+optical_flow:
+  lk_win_size: 15  # Lucas-Kanade window size
+  lk_max_level: 2
+  lk_criteria_eps: 0.03
+  lk_criteria_count: 10
+
+bite_detection:
+  frame_interval: 30
+  smooth_window_size: 20
