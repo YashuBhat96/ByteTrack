@@ -24,9 +24,9 @@
 
 ## Introduction
 
-
 This project presents one of the first automated systems for detecting eating bites in children during meal times. Our aim is to develop a robust, high-accuracy bite detection model for use in video-recorded meal settings. We collected and analyzed in-lab meal videos featuring children aged 7-9 (n=242 videos train set; n=94 children) across four portion sizes.
 
+The videos present unique challenges, as they capture natural, often noisy behavior in children, including frequent movement, occlusions, and varied eating styles. These factors introduce significant variability in the data, making automated bite detection particularly challenging. ByteTrack aims to overcome these complexities, enabling accurate bite detection even in noisy, real-world video settings.
 ## Approach
 
 The system uses a multi-stage deep learning architecture optimized for accurate detection and classification:
@@ -41,7 +41,7 @@ The system uses a multi-stage deep learning architecture optimized for accurate 
 
 ## Dataset
 
-Our dataset consists of in-lab videos, where children were provided set meals with either a human reader(researcher) or audiobook. Camera angles are from the top corner providing comprehensive coverage of varying portion sizes and eating styles among children. The annotated dataset supports model training and evaluation in children's eating behavior.
+Our dataset consists of in-lab videos, where children were provided set meals with either a human reader(researcher) or audiobook. Camera angles are from the top corner providing comprehensive coverage of varying portion sizes and eating styles among children. Ground truths for the study are manually annotated timestamps from 2 researchers by visual observations. The annotated dataset supports model training and evaluation in children's eating behavior.
 <div style="display: flex; align-items: center;">
     <img src="assets/room_orient1.jpg" alt="room_orient1" width="500" style="margin-right: 30px;"/>
     <img src="assets/room_orient2.jpg" alt="room_orient2" width="500"/>
@@ -134,9 +134,19 @@ After setting up the environment and configuring `config.yaml`, you can start us
 python ByteTrack_main.py --config config.yaml
 ```
 
+## Results
+
 ## Status ![Proof of Concept](https://img.shields.io/badge/status-proof--of--concept-blue)
 
 ## License ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## HomeBytes Study Information
+This study serves as a proof-of-concept aimed at assessing whether eating behaviors observed in a controlled, in-lab setting can be translated to free-living conditions (at home). Our primary goal is to evaluate the validity of bite detection and intake patterns outside the lab by comparing in-lab and at-home bite rates as well as cumulative intake curves.
 
+ByteTracker is an innovative deep-learning and computer vision-based tool designed for automatic bite detection in children. By automating the process of bite detection, ByteTracker significantly reduces labor and time costs associated with manual observations. This study focuses on:
+
+Comparing Manual vs. AI-Based Detection: We plan to assess ByteTracker's accuracy against traditional manual annotations (gold-standard) to validate its performance.
+Evaluating Lab vs. Home Conditions: We plan to explore the consistency of bite rate and intake patterns in controlled versus free-living environments, assessing ByteTracker's applicability beyond the lab.
+
+ByteTracker represents a step forward in leveraging AI to streamline eating behavioral analysis, aiming to enhance the scalability and practicality of dietary studies in real-world settings.
