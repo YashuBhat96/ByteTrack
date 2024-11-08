@@ -65,7 +65,7 @@ To get started with ByteTrack, follow these steps to set up your environment:
 
 First, clone the repository and navigate into the project directory:
 ```bash
-git clone --recurse-submodules https://github.com/YOUR_USERNAME/ByteTrack.git
+git clone --recurse-submodules https://github.com/YashuBhat96/ByteTrack.git
 cd ByteTrack
 ```
 Our pipeline has dependencies on YOLOv7, and we require a custom-trained YOLOv7 directory within the YOLOv7_custom folder inside the ByteTrack directory as a submodule. This setup uses YOLOv7 ([original YOLOv7](https://github.com/WongKinYiu/yolov7)) customized for our dataset, available here: [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git). 
