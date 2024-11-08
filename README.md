@@ -61,16 +61,15 @@ Our dataset consists of in-lab videos, where children were provided set meals wi
 
 To get started with ByteTrack, follow these steps to set up your environment:
 
-## 1. Clone the Repository
+## 1. Clone the ByteTrack Repository
 
 First, clone the repository and navigate into the project directory:
-This pipeline uses YOLOv7 ([original YOLOv7](https://github.com/WongKinYiu/yolov7)) custom trained for our dataset [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git) which should automatically get cloned with the ByteTrack repo.
-
 ```bash
-git clone https://github.com/YashuBhat96/ByteTrack.git
+git clone --recurse-submodules https://github.com/YOUR_USERNAME/ByteTrack.git
 cd ByteTrack
 ```
-## 2. Set Up the Environment
+Our pipeline has dependencies on YOLOv7, and we require a custom-trained YOLOv7 directory within the YOLOv7_custom folder inside the ByteTrack directory as a submodule. This setup uses YOLOv7 ([original YOLOv7](https://github.com/WongKinYiu/yolov7)) customized for our dataset, available here: [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git). 
+## 3. Set Up the Environment
 You have two options for setting up your environment, depending on your preference and requirements.
 
 #### **A. Using the Environment File**:
