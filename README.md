@@ -1,7 +1,7 @@
 # ByteTrack
 ### Automatic Bite Detection in Children as a part of HomeBytes project
 <div style="display: flex; align-items: center;">
-    <img src="assets/ByteTrack%20logo.jpg" alt="ByteTrack Logo" width="300" style="margin-right: 30px;"/>
+    <img src="assets/ByteTrack%20logo.jpg" alt="ByteTrack Logo" width="300" style="margin-right: 10px;"/>
     <img src="assets/HomeBytes_logo.jpg" alt="HomeBytes Logo" width="300"/>
 </div>
 
@@ -58,19 +58,19 @@ Our dataset consists of in-lab videos, where children were provided set meals wi
 
 ## Getting Started
 ## Setup
+Follow these steps to set up your environment for ByteTrack.
 
-To get started with ByteTrack, follow these steps to set up your environment:
+1. Clone the ByteTrack Repository
+To get started, clone the ByteTrack repository with the custom YOLOv7 submodule. This setup ensures that YOLOv7, customized for our dataset, is available in the YOLOv7_custom folder inside the ByteTrack directory.
 
-## 1. Clone the ByteTrack Repository
-
-First, clone the repository and navigate into the project directory:
 ```bash
 git clone --recurse-submodules https://github.com/YashuBhat96/ByteTrack.git
 cd ByteTrack
 ```
-Our pipeline has dependencies on YOLOv7, and we require a custom-trained YOLOv7 directory within the YOLOv7_custom folder inside the ByteTrack directory as a submodule. This setup uses YOLOv7 ([original YOLOv7](https://github.com/WongKinYiu/yolov7)) customized for our dataset, available here: [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git). 
-## 3. Set Up the Environment
-You have two options for setting up your environment, depending on your preference and requirements.
+Our pipeline depends on YOLOv7. The customized YOLOv7 repository is available here: [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git).
+
+## 2. Set Up the Environment
+Choose one of the following methods to set up the environment:
 
 #### **A. Using the Environment File**:
 For a reproducible setup, use the ByteTrack_env.yml file to create a Conda environment with all necessary dependencies.
@@ -83,14 +83,14 @@ conda activate ByteTrack
 Deployment Environment: To set up an environment to use the model on your videos, install dependencies from the deployment requirements file.
 
 ```bash
-pip install -r deploy_requirements.txt.txt
+pip install -r deploy_requirements.txt
 ````
 OR 
 
 #### **Development Environment**: To set up an environment to develop your model, install dependencies from the development requirements file.
 
 ```bash
-pip install -r dev_requirements.txt.txt
+pip install -r dev_requirements.txt
 ````
 ## 3. Configuration File (config.yaml)
 
@@ -108,7 +108,7 @@ The configuration file is used to:
 The repository should contain a sample configuration file, `config.yaml`, which you can customize to fit your environment. To set it up:
 
 1. Locate `config.yaml` in the repository root.
-2. Open the file in a text editor and modify the paths and parameters as needed.
+2. Open the file in a text editor and modify the paths and parameters as needed. 
 
    For example:
    ```yaml
@@ -117,11 +117,10 @@ The repository should contain a sample configuration file, `config.yaml`, which 
    output_dir: "path/to/output/"
    threshold: 0.5
    ```
-
-
+   
 ## Usage
 
-After setting up the environment and configuring `config.yaml`, you can start using ByteTrack for automatic bite detection. Ensure you have activated the environment before running the main script.
+Once your environment is set up and config.yaml is configured, you’re ready to run ByteTrack.
 
 ### Running the Main Script
 
@@ -130,13 +129,17 @@ After setting up the environment and configuring `config.yaml`, you can start us
    ```bash
    conda activate ByteTrack_env
    ```
-2. **Run the main script:** The main script, ByteTrack_main.py, handles the entire bite detection process. Run the following command through the terminal, specifying config.yaml as the configuration file:
+   
+2. **Run the main script:** The main script, ByteTrack_main.py, handles the entire bite detection process.
+   
+Within the ByteTrack environment, open ByteTrack repo. 
 
-```bash
-python ByteTrack_main.py --config config.yaml
-```
+   ```bash
+    python ByteTrack_main.py --config config.yaml
+   ```
 
 ## Results
+To be added
 
 ## Status ![Proof of Concept](https://img.shields.io/badge/status-proof--of--concept-blue)
 
