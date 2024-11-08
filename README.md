@@ -63,13 +63,14 @@ To get started with ByteTrack, follow these steps to set up your environment:
 
 ## 1. Clone the ByteTrack Repository
 
-First, clone the repository and navigate into the project directory:
+First, clone the repository and navigate into the project directory. The code block below will allow for both ByteTrack and custom YOLOv7 to be cloned automatically.
 ```bash
 git clone --recurse-submodules https://github.com/YashuBhat96/ByteTrack.git
 cd ByteTrack
 ```
 Our pipeline has dependencies on YOLOv7, and we require a custom-trained YOLOv7 directory within the YOLOv7_custom folder inside the ByteTrack directory as a submodule. This setup uses YOLOv7 ([original YOLOv7](https://github.com/WongKinYiu/yolov7)) customized for our dataset, available here: [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git). 
-## 3. Set Up the Environment
+
+## 2. Set Up the Environment
 You have two options for setting up your environment, depending on your preference and requirements.
 
 #### **A. Using the Environment File**:
@@ -108,7 +109,7 @@ The configuration file is used to:
 The repository should contain a sample configuration file, `config.yaml`, which you can customize to fit your environment. To set it up:
 
 1. Locate `config.yaml` in the repository root.
-2. Open the file in a text editor and modify the paths and parameters as needed.
+2. Open the file in a text editor and modify the paths and parameters as needed. 
 
    For example:
    ```yaml
@@ -117,7 +118,6 @@ The repository should contain a sample configuration file, `config.yaml`, which 
    output_dir: "path/to/output/"
    threshold: 0.5
    ```
-
 
 ## Usage
 
