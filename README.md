@@ -76,7 +76,7 @@ Choose one of the following methods to set up the environment:
 For a reproducible setup, use the ByteTrack_env.yml file to create a Conda environment with all necessary dependencies.
 ```bash
 conda env create -f ByteTrack_env.yml
-conda activate ByteTrack
+conda activate ByteTrack_env
 ```
 #### **B. Using requirements files**:
 
