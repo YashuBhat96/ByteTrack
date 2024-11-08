@@ -134,8 +134,15 @@ Once your environment is set up and config.yaml is configured, you’re ready to
    
 Within the ByteTrack environment, open ByteTrack repo. 
 
+If you have GPU capability:
+
    ```bash
-    python ByteTrack_main.py --config config.yaml
+    python ByteTrack_main_GPU.py --config config.yaml
+   ```
+If you do not have GPU capability, CPU only:
+
+   ```bash
+    python ByteTrack_main_CPU.py --config config.yaml
    ```
 
 ## Results
