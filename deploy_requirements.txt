@@ -8,3 +8,4 @@ matplotlib
 tqdm
 PyYAML
 pandas
+requests
