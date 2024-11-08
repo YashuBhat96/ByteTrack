@@ -18,6 +18,7 @@ import csv
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Add this line at the start of your script, right after the other imports
 yolo_code_dir = os.path.join(script_dir, "Yolov7_custom")
+yolo_code_dir = os.path.join(script_dir, "YOLOv7_custom")
 sys.path.append(yolo_code_dir)
 
 from models.experimental import attempt_load

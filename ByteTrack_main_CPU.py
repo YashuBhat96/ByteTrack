@@ -13,11 +13,12 @@ from tqdm import tqdm  # For progress tracking
 import logging
 import yaml
 import csv
+from multiprocessing import Pool, cpu_count
 
 # Get the directory where the script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Add this line at the start of your script, right after the other imports
-yolo_code_dir = os.path.join(script_dir, "Yolov7_custom")
+yolo_code_dir = os.path.join(script_dir, "YOLOv7_custom")
 sys.path.append(yolo_code_dir)
 
 from models.experimental import attempt_load
@@ -97,25 +98,22 @@ class LSTMModelDeployment(nn.Module):
 
 # Initialize models
 def initialize_models(yolo_model_path, faster_rcnn_model_path, lstm_model_path):
-    logger.info("Initializing models...")
-    
     # Load YOLO model directly from weights file
-    yolo_model = attempt_load(yolo_model_path, map_location=device)
-    yolo_model.to(device).eval()
-    logger.info(f"Loaded YOLO model from {yolo_model_path}")
-
-    # Continue with the other models
-    faster_rcnn_model = fasterrcnn_resnet50_fpn(pretrained=False, num_classes=2).to(device)
-    faster_rcnn_model.load_state_dict(torch.load(faster_rcnn_model_path, map_location=device))
+    yolo_model = attempt_load(yolo_model_path, map_location="cpu")
+    yolo_model.eval()
+    
+    # Load Faster R-CNN model
+    faster_rcnn_model = fasterrcnn_resnet50_fpn(pretrained=False, num_classes=2).to("cpu")
+    faster_rcnn_model.load_state_dict(torch.load(faster_rcnn_model_path, map_location="cpu"))
     faster_rcnn_model.eval()
-    logger.info(f"Loaded Faster R-CNN model from {faster_rcnn_model_path}")
-
-    lstm_model = LSTMModelDeployment(input_size=1280, hidden_size=256, num_layers=3, num_classes=1, bidirectional=True).to(device)
-    lstm_model.load_state_dict(torch.load(lstm_model_path, map_location=device))
+    
+    # Load LSTM model
+    lstm_model = LSTMModelDeployment(input_size=1280, hidden_size=256, num_layers=3, num_classes=1, bidirectional=True).to("cpu")
+    lstm_model.load_state_dict(torch.load(lstm_model_path, map_location="cpu"))
     lstm_model.eval()
-    logger.info(f"Loaded LSTM model from {lstm_model_path}")
-
+    
     return yolo_model, faster_rcnn_model, lstm_model
+
 
 # Function to create padding and masking
 def pad_and_mask_features(features, max_sequence_length):
@@ -159,6 +157,7 @@ def process_frame_yolo(frame, model, target_size=(512, 320)):
     resized_frame = cv2.resize(frame, target_size)
     img = cv2.cvtColor(resized_frame, cv2.COLOR_BGR2RGB)
     tensor_frame = transform(Image.fromarray(img)).unsqueeze(0).to(device)
+    tensor_frame = tensor_frame.half()  # Convert input tensor to half-precision if model is in FP16
     with torch.no_grad():
         prediction = model(tensor_frame)[0]  # Extract the prediction tensor
         prediction = non_max_suppression(prediction, conf_thres=0.25, iou_thres=0.5)
@@ -538,36 +537,39 @@ def detect_and_track(video_path, yolo_model, faster_rcnn_model, lstm_model, effi
         cv2.destroyAllWindows()
     logger.info(f"Finished processing video: {video_path}")
 
-# Process all videos in the specified directory
-def process_videos(directory_path, yolo_model, faster_rcnn_model, lstm_model, efficientnet, config):
-    output_dir = config['paths']['output_dir']
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-        logger.info(f"Created output directory: {output_dir}")
 
-    logger.info(f"Processing videos in directory: {directory_path}")
+def process_single_video(video_path, config):
+    yolo_model_path = config['models']['yolo_model_path']
+    faster_rcnn_model_path = config['models']['faster_rcnn_model_path']
+    lstm_model_path = config['models']['lstm_model_path']
+    yolo_model, faster_rcnn_model, lstm_model = initialize_models(yolo_model_path, faster_rcnn_model_path, lstm_model_path)
     
-    # List all video files in the directory to get total count for tqdm
-    video_files = [filename for filename in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, filename)) and filename.lower().endswith(('.mp4', '.avi', '.mov'))]
-    
-    # Wrap the processing loop with tqdm for progress tracking
-    for filename in tqdm(video_files, desc="Processing Videos", unit="video"):
-        video_path = os.path.join(directory_path, filename)
-        detect_and_track(video_path, yolo_model, faster_rcnn_model, lstm_model, efficientnet, config)
+    detect_and_track(video_path, yolo_model, faster_rcnn_model, lstm_model, efficientnet, config)
 
-    logger.info("All videos have been processed.")
+def process_videos_parallel(directory_path, config):
+    video_files = [os.path.join(directory_path, f) for f in os.listdir(directory_path)
+                   if os.path.isfile(os.path.join(directory_path, f)) and f.lower().endswith(('.mp4', '.avi', '.mov'))]
+    
+    # Use a Pool with the number of CPU cores
+    with Pool(processes=cpu_count()) as pool:
+        # Wrap the video_files with tqdm for progress tracking
+        for _ in tqdm(pool.starmap(process_single_video, [(video, config) for video in video_files]), 
+                      total=len(video_files), desc="Processing Videos", unit="video"):
+            pass  # tqdm updates with each completed video
+
 
 if __name__ == "__main__":
-    # Extract paths and parameters from config
     yolo_model_path = config['models']['yolo_model_path']
     faster_rcnn_model_path = config['models']['faster_rcnn_model_path']
     lstm_model_path = config['models']['lstm_model_path']
     output_dir = config['paths']['output_dir']
     video_dir = config['paths']['video_dir']
-    window_size = bite_detection_params.get('window_size', 20)  # Default to 20 if not provided
+    
+    # Parallel video processing with progress tracking
+    process_videos_parallel(video_dir, config)
 
     # Initialize models
     yolo_model, faster_rcnn_model, lstm_model = initialize_models(yolo_model_path, faster_rcnn_model_path, lstm_model_path)
 
     # Process videos in the specified directory
-    process_videos(video_dir, yolo_model, faster_rcnn_model, lstm_model, efficientnet, config)
+    process_videos_parallel(video_dir, yolo_model, faster_rcnn_model, lstm_model, efficientnet, config)

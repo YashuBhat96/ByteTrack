@@ -1,11 +1,14 @@
 models:
   yolo_code_dir: './Yolov7_custom/'
   yolo_model_path: './Yolov7_custom/runs/train/best_ByteTrack/weights/best.pt'
+  yolo_code_dir: './yolov7_usage_ByteTrack'
+  yolo_model_path: './YOLOv7_custom/runs/train/best_ByteTrack/weights/best.pt'
   faster_rcnn_model_path: './models_bytetrack/frcnn_final.pth'
   lstm_model_path: './models_bytetrack/best_lstm.pth'
 
 paths:
   output_dir: './bite_report'
+  output_dir: './PS_report'
   video_dir: './test'
 
 processing:
