@@ -8,7 +8,6 @@ models:
 
 paths:
   output_dir: './bite_report'
-  output_dir: './PS_report'
   video_dir: './test'
 
 processing:
