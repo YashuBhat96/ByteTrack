@@ -1,0 +1,13 @@
+# Directory paths
+csv_directory: './bite_report'          # Path to CSV files for coder2
+excel_directory: './test_labels'        # Path to Excel files for coder1
+output_directory: './output_results'    # Path to save ICC results and plots
+
+# Plot settings
+plot_title: 'Consolidated Bland-Altman Plot for All Subjects'
+plot_x_label: 'Average of Timestamps'
+plot_y_label: 'Difference in Timestamps'
+
+# Thresholds
+min_timestamps: 2                      # Minimum number of paired timestamps required per subject
+fps: 30                                # Frames per second to convert frame number to seconds
