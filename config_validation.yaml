@@ -1,5 +1,0 @@
-total_intake_path: "./intake.xlsx"
-manual_data_folder: "./test_labels"
-modeled_data_folder: "./bite_report"
-output_folder: "./plots"
-
