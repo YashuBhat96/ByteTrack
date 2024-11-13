@@ -1,7 +1,7 @@
 paths:
   csv_root_dir: "./bite_report"
   excel_root_dir: "./test_labels"
-  output_dir: "./output"
+  output_dir: "./metrics"
   metrics_output_filename: "ByteTrack_final_metrics.xlsx"
 
 file_suffixes:
