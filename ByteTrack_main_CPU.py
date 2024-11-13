@@ -18,7 +18,6 @@ import csv
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Add this line at the start of your script, right after the other imports
 yolo_code_dir = os.path.join(script_dir, "Yolov7_custom")
-yolo_code_dir = os.path.join(script_dir, "YOLOv7_custom")
 sys.path.append(yolo_code_dir)
 
 from models.experimental import attempt_load
@@ -29,7 +28,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Define the relative path to config.yaml from the script directory
-config_path = os.path.join(script_dir, "config.yaml")
+config_path = os.path.join(script_dir, "config.yml")
 
 # Load configuration from YAML file
 def load_config(config_path):
