@@ -58,7 +58,7 @@ Our dataset consists of in-lab videos, where children were provided set meals wi
 - **Face Detection**: YOLOv7 and Faster R-CNN configurations and weights.
 - **Bite Classification**: EfficientNet for feature extraction, followed by LSTM for sequential bite classification.
 - **Utilities**: Helper functions for video preprocessing, annotation, and data handling.
-- **Configuration Files**: YAML files for model paths, hyperparameters, and relative paths for easy integration.
+- **Configuration Files**: yaml or yml files for model paths, hyperparameters, and relative paths for easy integration.
 
 ## Getting Started
 ## Setup
@@ -96,26 +96,26 @@ OR
 ```bash
 pip install -r dev_requirements.txt
 ````
-## 3. Configuration File (config.yaml)
+## 3. Configuration File (config.yml)
 
-The `config.yaml` file is essential for managing various settings in ByteTrack, such as file paths, model parameters, and other configurations needed for the bite detection pipeline.
+The `config.yml` file is essential for managing various settings in ByteTrack, such as file paths, model parameters, and other configurations needed for the bite detection pipeline.
 
-### 1. Purpose of `config.yaml`
+### 1. Purpose of `config.yml`
 
 The configuration file is used to:
 - Define paths for model weights, data files, and output directories.
 - Set model parameters, such as thresholds and detection parameters.
 - Manage other customizable options for running the pipeline.
 
-### 2. Installing and Setting Up `config.yaml`
+### 2. Installing and Setting Up `config.yml`
 
-The repository should contain a sample configuration file, `config.yaml`, which you can customize to fit your environment. To set it up:
+The repository should contain a sample configuration file, `config.yml`, which you can customize to fit your environment. To set it up:
 
-1. Locate `config.yaml` in the repository root.
+1. Locate `config.yml` in the repository root.
 2. Open the file in a text editor and modify the paths and parameters as needed. 
 
    For example:
-   ```yaml
+   ```yml
    model_weights: "path/to/weights.pt"
    data_path: "path/to/dataset/"
    output_dir: "path/to/output/"
@@ -124,7 +124,7 @@ The repository should contain a sample configuration file, `config.yaml`, which 
    
 ## Usage
 
-Once your environment is set up and config.yaml is configured, you’re ready to run ByteTrack.
+Once your environment is set up and config.yml is configured, you’re ready to run ByteTrack.
 
 ### Environment Setup
 
@@ -141,12 +141,12 @@ Within the ByteTrack environment, open ByteTrack repo.
 If you have GPU capability:
 
    ```bash
-    python ByteTrack_main_GPU.py --config config.yaml
+    python ByteTrack_main_GPU.py --config config.yml
    ```
 If you do not have GPU capability, CPU only:
 
    ```bash
-    python ByteTrack_main_CPU.py --config config.yaml
+    python ByteTrack_main_CPU.py --config config.yml
    ```
 
 This gives you the timestamps for bites for each video in your './test' folder. 
