@@ -9,7 +9,7 @@ import os
 import yaml
 
 # Load configuration paths from YAML file
-with open("config_validation.yaml", "r") as config_file:
+with open("config_validation.yml", "r") as config_file:
     config = yaml.safe_load(config_file)
 
 # Define root directory
