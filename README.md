@@ -144,10 +144,67 @@ If you do not have GPU capability, CPU only:
    ```bash
     python ByteTrack_main_CPU.py --config config.yaml
    ```
+This gives you the timestamps for bites for each video in your ./test folder. 
+
+## Testing and Validation Metrics: Usage
+
+### ByteTrack Metrics Test
+To evaluate ByteTrack’s bite detection performance on a subject-by-subject basis, we use the ByteTrack_metrics_test.py script. This script provides detailed metrics including F1 score, recall, accuracy, precision, as well as counts of True Positives (TP), False Positives (FP), and False Negatives (FN). These metrics help assess ByteTrack’s detection accuracy and highlight areas for improvement. Use the config_test.yml file to adjust settings and paths for testing.
+
+Activate the ByteTrack environment
+conda activate ByteTrack_env
+
+#### Run the metrics test script to evaluate model performance
+ ```bash
+python ByteTrack_metrics_test.py --config config_test.yml
+ ```
+
+### ByteTrack Validation Using [LODE](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1088053/full) Model
+ByteTrack’s predictions are validated using the LODE model by comparing model-predicted timestamps with manually annotated ground-truth data. The ByteTrack_validation.py script (configured by config_validation.yml) calculates validation metrics such as Root Mean Square Error (RMSE) and Percent RMSE (%RMSE), providing insight into the alignment of model predictions with actual intake events.
+
+Key Validation Metrics:
+
+Root Mean Square Error (RMSE): Quantifies model accuracy by comparing predicted timestamps to ground truth.
+Percent RMSE (%RMSE): Calculates RMSE as a percentage, standardizing comparisons across subjects.
+
+##### Run the validation script to assess ByteTrack’s alignment with ground truth
+ ```bash
+python ByteTrack_validation.py --config config_validation.yml
+```
+
+### Inter-rater Reliability Assessment ([ICC(3,1)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4913118/))
+The Intraclass Correlation Coefficient (ICC(3,1)) was calculated for each subject to assess inter-rater reliability in manual annotations, validating the consistency of bite annotations across annotators. Higher ICC(3,1) values indicate the level of agreement, supporting ByteTrack’s detection accuracy in real-world scenarios with varied human annotations.
+
+We use the ICC.py script along with config_ICC.yml to configure the paths and parameters for ICC calculations.
+
+##### Run the ICC script to calculate inter-rater reliability
+ ```bash
+python ICC.py --config config_ICC.yml
+ ```
 
 ## Results
-To be added
+### Bite Detection Performance
+The following metrics summarize ByteTrack’s bite detection performance across subjects:
 
+Average Accuracy: 67.3%
+Average Precision: 72.1%
+Average Recall: 81.6%
+Average F1 Score: 73.7%
+ByteTrack shows a range in precision and recall values across subjects:
+
+Precision ranges from 41.7% to 99.4%, with lower precision observed in subjects where increased movement or occlusions led to higher false positives.
+Recall ranges from 71.7% to 86.2%, showing ByteTrack’s ability to consistently detect true bites, with some variance due to factors such as rapid movements or occlusions.
+Most subjects have consistent detection rates, with F1 scores between 56% and 84%. Subjects with greater movement or visibility challenges exhibited slightly lower precision, suggesting potential areas for further model optimization to improve robustness across varied conditions.
+
+### Inter-Rater Reliability Assessment (ICC(3,1))
+To assess inter-rater reliability in manual annotations, we calculated the Intraclass Correlation Coefficient (ICC(3,1)) for each subject. This evaluation provides insights into annotation consistency across different raters, essential for validating ByteTrack's performance in real-world scenarios.
+[≥ 0.90% = excellent reliability; < 0.90, ≥ 0.75 = good reliability; < 0.75, ≥ 0.5 = moderate reliability, < 0.5 = poor reliability]
+
+Average ICC(3,1): 0.67
+Range of ICC(3,1) Values: 0.27 to 0.89
+Lower ICC values (e.g., 0.27) were observed in subjects with increased movement or partial occlusions, where model may have had more difficulty in consistently labeling bites. Conversely, high ICC values (up to 0.89) indicate strong agreement among annotators, validating the reliability of annotations used in training ByteTrack.
+
+This inter-rater reliability assessment underscores the robustness of ByteTrack’s bite detection model, while also highlighting areas for improvement in cases with highly variable behaviors.
 ## Status ![Proof of Concept](https://img.shields.io/badge/status-proof--of--concept-blue)
 
 ## License ![License: MIT](https://img.shields.io/badge/license-MIT-green)
