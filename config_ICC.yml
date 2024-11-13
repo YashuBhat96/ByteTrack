@@ -1,7 +1,7 @@
 # Directory paths
 csv_directory: './bite_report'          # Path to CSV files for coder2
 excel_directory: './test_labels'        # Path to Excel files for coder1
-output_directory: './output_results'    # Path to save ICC results and plots
+output_directory: './ICC_results'    # Path to save ICC results and plots
 
 # Plot settings
 plot_title: 'Consolidated Bland-Altman Plot for All Subjects'
