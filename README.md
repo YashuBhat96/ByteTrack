@@ -216,6 +216,14 @@ Recall ranges from 71.7% to 86.2%, showing ByteTrack’s ability to consistently
 
 Most subjects have consistent detection rates, with F1 scores between 56% and 84%. Subjects with greater movement or visibility challenges exhibited slightly lower precision, suggesting potential areas for further model optimization to improve robustness across varied conditions.
 
+## Confusion Matrix
+
+|                       | Predicted Positive | Predicted Negative |
+|-----------------------|--------------------|--------------------|
+| **Actual Positive**   | 5353 (TP)          | 1950 (FN)         |
+| **Actual Negative**   | 1513 (FP)          | unknown (TN)      |
+
+
 ### Inter-Rater Reliability Assessment (ICC(3,1))
 To assess inter-rater reliability in manual annotations, we calculated the Intraclass Correlation Coefficient (ICC(3,1)) for each subject. This evaluation provides insights into annotation consistency across different raters, essential for validating ByteTrack's performance in real-world scenarios.
 [≥ 0.90% = excellent reliability; < 0.90, ≥ 0.75 = good reliability; < 0.75, ≥ 0.5 = moderate reliability, < 0.5 = poor reliability]
