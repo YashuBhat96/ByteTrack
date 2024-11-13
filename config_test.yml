@@ -1,0 +1,19 @@
+paths:
+  csv_root_dir: "./bite_report"
+  excel_root_dir: "./test_labels"
+  output_dir: "./output"
+  metrics_output_filename: "ByteTrack_final_metrics.xlsx"
+
+file_suffixes:
+  csv_suffix: "_results.csv"
+  excel_suffix: ".xlsx"
+
+columns:
+  frame_number_column: "Frame Number"
+  calculated_time_column: "Calculated_Time(s)"
+  matched_time_column: "Matched Time (Coder 2)"
+  type_column: "Type"
+  time_column_options: ["Time_Relative_sf", "Time_point_s"]  # Add your specific time column names here
+
+matching:
+  match_threshold: 10
