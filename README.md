@@ -14,8 +14,12 @@
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
+  - [Environment Setup](#environment-setup)
 - [Usage](#usage)
+  - [Testing and Validation Metrics](#testing-and-validation-metrics) 
 - [Results](#results)
+  - [Bite Detection Performance](#bite-detection-performance)
+  - [Inter-Rater Reliability Assessment](#inter-rater-reliability-assessment)
 - [Status](#status)
 - [License](#License)
 - [HomeBytes Study information](#HomeBytes-study)
@@ -122,7 +126,7 @@ The repository should contain a sample configuration file, `config.yaml`, which 
 
 Once your environment is set up and config.yaml is configured, you’re ready to run ByteTrack.
 
-### Running the Main Script
+### Environment Setup
 
 1. **Activate the Environment (ByteTrack_env)**: Make sure the ByteTrack environment is active.
 
@@ -146,7 +150,7 @@ If you do not have GPU capability, CPU only:
    ```
 This gives you the timestamps for bites for each video in your ./test folder. 
 
-## Testing and Validation Metrics: Usage
+## Testing and Validation Metrics
 
 ### ByteTrack Metrics Test
 To evaluate ByteTrack’s bite detection performance on a subject-by-subject basis, we use the ByteTrack_metrics_test.py script. This script provides detailed metrics including F1 score, recall, accuracy, precision, as well as counts of True Positives (TP), False Positives (FP), and False Negatives (FN). These metrics help assess ByteTrack’s detection accuracy and highlight areas for improvement. Use the config_test.yml file to adjust settings and paths for testing.
