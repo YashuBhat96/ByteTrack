@@ -14,6 +14,7 @@
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
+  - [Video Preparation](#video-preparation)
   - [Environment Setup](#environment-setup)
 - [Usage](#usage)
   - [Testing and Validation Metrics](#testing-and-validation-metrics) 
@@ -64,14 +65,22 @@ Our dataset consists of in-lab videos, where children were provided set meals wi
 ## Setup
 Follow these steps to set up your environment for ByteTrack.
 
-1. Clone the ByteTrack Repository
+2. Clone the ByteTrack Repository
 To get started, clone the ByteTrack repository with the custom YOLOv7 submodule. This setup ensures that YOLOv7, customized for our dataset, is available in the YOLOv7_custom folder inside the ByteTrack directory.
 
 ```bash
 git clone --recurse-submodules https://github.com/YashuBhat96/ByteTrack.git
 cd ByteTrack
 ```
+
 Our pipeline depends on YOLOv7. The customized YOLOv7 repository is available here: [YOLOv7_custom](https://github.com/YashuBhat96/Yolov7_custom_ByteTrack.git).
+
+## 1. Video Preparation
+This model works best with videos converted to a constant frame rate (CFR) at a constant 30 frames per second (30FPS). We used [FFMPEG](https://www.ffmpeg.org/). For more information check: [FFMPEG GitHub repository](https://github.com/FFmpeg/FFmpeg). Run the code line below in the terminal.
+
+```bash
+/path/to/ffmpeg -i path/to/input_video.mp4 -c:v h264_nvenc -r 30 path/to/output_video_30fps.mp4
+```
 
 ## 2. Set Up the Environment
 Choose one of the following methods to set up the environment:
