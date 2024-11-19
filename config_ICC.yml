@@ -1,0 +1,18 @@
+# Configuration for ICC Calculation and Bland-Altman Plotting
+
+# Directories
+csv_directory: './bite_report'          # Path to CSV files for coder2
+excel_directory: './test_labels'        # Path to Excel files for coder1
+output_directory: './ICC_results'    # Path to save ICC results and plots
+
+# Data Settings
+fps: 30
+behavior_filter: 'peak:bite'  # Filter for specific behavior in Excel files
+manual_time_column: ['Time_point_s','Time_Relative_sf']   # Change to 'Time_Relative_sf' if that's the column
+modeled_time_column: 'Frame Number'
+min_timestamps: 5  # Minimum number of matched timestamps required
+
+# Plot Settings
+plot_title: 'Bland-Altman Plot for Timestamp Agreement'
+plot_x_label: 'Average of Manual and Modeled Timestamps (minutes)'
+plot_y_label: 'Difference Between Manual and Modeled Timestamps (minutes)'
