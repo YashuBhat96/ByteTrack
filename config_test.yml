@@ -1,0 +1,24 @@
+paths:
+  csv_root_dir: "./bite_report"               # Path to directory containing CSV files
+  excel_root_dir: "./test_labels"             # Path to directory containing Excel files
+  output_dir: "./metrics"                        # Directory to save outputs
+  metrics_output_filename: "meal_metrics_output.xlsx"  # Name of the output Excel file for metrics
+
+file_suffixes:
+  csv_suffix: "_results.csv"                  # Suffix for CSV files
+  excel_suffix: ".xlsx"                       # Suffix for Excel files
+
+columns:
+  frame_number_column: "Frame Number"          # Column for frame numbers in the CSV
+  matched_time_column: "Matched Time (Coder 2)"     
+  calculated_time_column: "calculated_time"     # Column for calculated times (derived from frames)
+  type_column: "Type" 
+  time_column_options:                        # Possible time columns in Excel (one will exist)
+    - "Time_point_s"
+    - "Time_Relative_sf"
+
+matching:
+  match_threshold: 10                         # Matching threshold in seconds
+
+analysis:
+  combine: false                       # If true, combine peak:bite and peak:sips; if false, only analyze peak:bite
