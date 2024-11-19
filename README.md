@@ -169,7 +169,7 @@ To evaluate ByteTrack’s bite detection performance on a subject-by-subject bas
 #### Run the metrics test script to evaluate model performance
 
  ```bash
-python ByteTrack_metrics_test.py --config config_test.yml
+python ByteTrack_test.py --config config_test.yml
  ```
 
 ### ByteTrack Validation Using [LODE](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1088053/full) Model
