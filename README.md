@@ -204,15 +204,15 @@ The following metrics summarize ByteTrack’s bite detection performance across 
 
 Average Accuracy: 67.3%
 
-Average Precision: 72.1%
+Average Precision: 78.64% (Range : 38.24% - 100%)
 
-Average Recall: 81.6%
+Average Recall: 68.9% (Range : 14.14% - 94.20%)
 
-Average F1 Score: 73.7%
+Average F1 Score: 70.8% (Range : 22.6% - 94.83%)
 
 Precision ranges from 41.7% to 99.4%, with lower precision observed in subjects where increased movement or occlusions led to higher false positives.
 
-Recall ranges from 71.7% to 86.2%, showing ByteTrack’s ability to consistently detect true bites, with some variance due to factors such as rapid movements or occlusions.
+Recall ranges from 71.7% to 86.2%, showing ByteTrack’s ability to  detect bites, with high subject-subject variance, due to factors such as rapid movements or occlusions.
 
 Most subjects have consistent detection rates, with F1 scores between 56% and 84%. Subjects with greater movement or visibility challenges exhibited slightly lower precision, suggesting potential areas for further model optimization to improve robustness across varied conditions.
 
@@ -220,17 +220,15 @@ Most subjects have consistent detection rates, with F1 scores between 56% and 84
 
 |                       | Predicted Positive | Predicted Negative |
 |-----------------------|--------------------|--------------------|
-| **Actual Positive**   | 5353 (TP)          | 1950 (FN)         |
-| **Actual Negative**   | 1513 (FP)          | unknown (TN)      |
+| **Actual Positive**   | 5302 (TP)          | 1846 (FN)         |
+| **Actual Negative**   | 1564 (FP)          | unknown (TN)      |
 
 
 ### Inter-Rater Reliability Assessment (ICC(3,1))
 To assess inter-rater reliability in manual annotations, we calculated the Intraclass Correlation Coefficient (ICC(3,1)) for each subject. This evaluation provides insights into annotation consistency across different raters, essential for validating ByteTrack's performance in real-world scenarios.
 [≥ 0.90% = excellent reliability; < 0.90, ≥ 0.75 = good reliability; < 0.75, ≥ 0.5 = moderate reliability, < 0.5 = poor reliability]
 
-Average ICC(3,1): 0.67
-
-Range of ICC(3,1) Values: 0.27 to 0.89
+Average ICC(3,1): 0.66 (Range : 0.16 - 0.99)
 
 Lower ICC values (e.g., 0.27) were observed in subjects with increased movement or partial occlusions, where model may have had more difficulty in consistently labeling bites. Conversely, high ICC values (up to 0.89) indicate strong agreement among annotators, validating the reliability of annotations used in training ByteTrack.
 
