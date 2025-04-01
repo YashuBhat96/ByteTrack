@@ -47,7 +47,7 @@ The system uses a multi-stage deep learning architecture optimized for accurate 
 
 ## Dataset
 
-Our dataset consists of in-lab videos, where children were provided set meals with either a human reader (researcher) or audiobook. Camera angles are from the top corner (see room orientation below) providing comprehensive coverage of varying portion sizes and eating styles among children. Ground truths for the study are manually annotated timestamps using [Noldus Observer XT](https://link.springer.com/article/10.3758/BF03203406) from 2 researchers by visual observations, using a set [protocol](https://pmc.ncbi.nlm.nih.gov/articles/PMC8671353/).
+Our dataset consists of in-lab videos, where children were provided set meals with either a human reader (researcher) or audiobook. Camera angles are from the top corner (see room orientation below) providing comprehensive coverage of varying portion sizes and eating styles among children. Ground truths for the study are manually annotated timestamps using [Noldus Observer XT](https://link.springer.com/article/10.3758/BF03203406) from 2 researchers by visual observations, using a set [protocol](https://zenodo.org/records/8140896).
 
 <div style="display: flex; align-items: center;">
     <img src="assets/room_orient1.jpg" alt="room_orient1" width="500" style="margin-right: 30px;"/>
